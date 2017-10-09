@@ -1,0 +1,32 @@
+运行说明：
+	在DosBox下，需使用Ctrl+F12将CPU转速调至200000左右（或自己测试出的，较为合理的转速），输入Btree tree.txt运行；
+	在cmd下直接输入Btree tree.txt运行。
+	可使用help命令查看命令说明。
+
+命令说明：
+preorder					先序遍历二叉树
+inorder						中序遍历二叉树
+postorder					后序遍历二叉树
+levorder					层序遍历二叉树
+height						计算二叉树高度/深度
+btree						返回查看二叉树
+insert 	双亲结点 新结点 插入位置(r/l)		在双亲结点的左(l)/右(r)插入新结点
+del    	结点					删除结点
+assign 	旧结点(值) 新结点(值)			修改结点的数据域
+find 	结点 遍历方式(p/i/l)			以规定的遍历方式查找结点
+degree 	结点的度(0/1/2)				强调显示度为0/1/2的结点
+prethread					先序线索化二叉树
+inthread					中序线索化二叉树
+postthread					后序线索化二叉树
+leaf						强调显示所有叶子结点
+help						查看帮助文档
+exit						退出系统
+
+
+示例：
+
+insert a u l					将新结点u插入到结点a的左子树上
+del a 						删除a结点或a结点的子树
+assign a b					修改结点a的数据域为b
+find a i					以中序遍历方式去查找a
+degree 2					强调显示所有度为2的结点
